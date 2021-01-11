@@ -1,0 +1,6 @@
+#Ignore le répertoire Brief
+Brief/
+
+#Ignore les documents temporaires
+~*.*
+
