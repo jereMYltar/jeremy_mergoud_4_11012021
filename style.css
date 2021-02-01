@@ -825,26 +825,6 @@ h4 {
     background-image: url("img/image-de-presentation.bmp");
 }
 
-.jm-titre2 {
-    width: 60%;
-    margin: auto;
-}
-
-.jm-citation {
-    width: 80%;
-    font-style: italic;
-    margin: auto;
-}
-
-.jm-lien {
-    margin: 2rem auto 1rem;
-    text-align: center;
-}
-
-.jm-footer-list {
-    column-count: 3;
-}
-
 @media (max-width: 1024px) {
     .bloc {
         padding-left: 20px;
@@ -1046,18 +1026,12 @@ h4 {
         width: 180px;
         height: 320px;
     }
-    .jm-footer-list {
-        column-count: 2;
-    }
 }
 
 @media (max-width: 400px) {
     .bloc {
         padding-left: 0;
         padding-right: 0;
-    }
-    .jm-footer-list {
-        column-count: 1;
     }
 }
 

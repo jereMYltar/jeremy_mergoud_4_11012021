@@ -1,0 +1,60 @@
+.jm-titre2 {
+    width: 60%;
+    margin: auto;
+}
+
+.jm-citation {
+    width: 80%;
+    font-style: italic;
+    margin: auto;
+}
+
+.jm-lien {
+    margin: 2rem auto 1rem;
+    text-align: center;
+}
+
+.jm-footer-list {
+    column-count: 3;
+}
+
+.jm-c-prim {
+    color: #C72D00FF!important;
+}
+
+.jm-c-sec {
+    color: #1F1F1FFF!important;
+}
+
+.jm-bg-prim {
+    background-color: #C72D00FF;
+}
+
+.jm-bg-white {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.jm-pad-20 {
+    padding: 20px;
+}
+
+.jm-mw-600 {
+    max-width: 600px;
+    margin: auto;
+}
+
+ul.jm-footer-list li, a {
+    color: #1F1F1FFF!important;
+}
+
+@media (max-width: 767px) {
+    .jm-footer-list {
+        column-count: 2;
+    }
+}
+
+@media (max-width: 400px) {
+    .jm-footer-list {
+        column-count: 1;
+    }
+}
