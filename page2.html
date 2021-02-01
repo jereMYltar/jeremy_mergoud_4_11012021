@@ -45,10 +45,10 @@
 					<li>
 						<a href="index.html">Accueil</a>
 					</li>
+<!-- 					<li>
+					</li> -->
 					<li>
-					</li>
-					<li>
-						<a href="page2.html">page2 &gt;</a>
+						<a href="page2.html">Contact</a>
 					</li>
 				</ul>
 			</div>
@@ -82,27 +82,36 @@
 			<div class="col-sm-6">
 				<form id="form_1" novalidate success-msg="Your message has been sent." fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!">
 					<div class="form-group">
-						<label>
+						<p>Les champs obligatoires sont précédés d'une étoile *</p>
+						<label for="name">
 							Nom
 						</label>
-						<input id="name" class="form-control" required />
+						<span> * </span>
+						<input id="name" aria-describedby="help-name" class="form-control" required />
+						<span id="help-name"> (exemple : Prénom Nom)</span>
 					</div>
 					<div class="form-group">
-						<label>
+						<label for="email">
 							Adresse email
 						</label>
-						<input id="email" class="form-control" type="email" required />
+						<span> * </span>
+						<input id="email" aria-describedby="help-email" class="form-control" type="email" required />
+						<span id="help-email">(exemple : exemple@domaine.fr)</span>
 					</div>
 					<div class="form-group">
-						<label>
+						<label for="input_504">
 							Comment nous avez-vous connu ?
 						</label>
-						<input class="form-control" type="email" required id="input_504" />
+						<span> * </span>
+						<input id="input_504" aria-describedby="help-input_504" class="form-control" type="email" required />
+						<span id="help-input_504">(exemple : par internet, par une connaissance, ...)</span>
 					</div>
 					<div class="form-group">
-						<label>
-							Brief de votre projet (Ajoutez autant de détails que nécessaire)<br>
-						</label><textarea id="message" class="form-control" rows="4" cols="50" required></textarea>
+						<label for="message">
+							Brief de votre projet (Ajoutez autant de détails que nécessaire) <br>
+						</label>
+						<span> * </span>
+						<textarea id="message" class="form-control" rows="4" cols="50" required></textarea>
 					</div> 
 					<button class="bloc-button btn btn-lg btn-block cta-hero btn-atomic-tangerine" type="submit">
 						Envoyer

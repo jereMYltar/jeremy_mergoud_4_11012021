@@ -842,8 +842,6 @@ h4 {
 }
 
 .jm-footer-list {
-    display: flex;
-    flex-direction: row;
     column-count: 3;
 }
 
@@ -1048,12 +1046,18 @@ h4 {
         width: 180px;
         height: 320px;
     }
+    .jm-footer-list {
+        column-count: 2;
+    }
 }
 
 @media (max-width: 400px) {
     .bloc {
         padding-left: 0;
         padding-right: 0;
+    }
+    .jm-footer-list {
+        column-count: 1;
     }
 }
 
