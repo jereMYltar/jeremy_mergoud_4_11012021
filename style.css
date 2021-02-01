@@ -825,6 +825,28 @@ h4 {
     background-image: url("img/image-de-presentation.bmp");
 }
 
+.jm-titre2 {
+    width: 60%;
+    margin: auto;
+}
+
+.jm-citation {
+    width: 80%;
+    font-style: italic;
+    margin: auto;
+}
+
+.jm-lien {
+    margin: 2rem auto 1rem;
+    text-align: center;
+}
+
+.jm-footer-list {
+    display: flex;
+    flex-direction: row;
+    column-count: 3;
+}
+
 @media (max-width: 1024px) {
     .bloc {
         padding-left: 20px;
