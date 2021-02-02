@@ -22,8 +22,12 @@
     color: #C72D00FF!important;
 }
 
-.jm-c-sec {
-    color: #1F1F1FFF!important;
+.jm-c-dgray {
+    color: #545454FF!important;
+}
+
+.jm-c-white {
+    color: white!important;
 }
 
 .jm-bg-prim {
@@ -32,6 +36,10 @@
 
 .jm-bg-white {
     background-color: rgba(255, 255, 255, 0.8);
+}
+
+.jm-bg-none {
+    background: none;
 }
 
 .jm-pad-20 {
@@ -43,8 +51,16 @@
     margin: auto;
 }
 
+.jm-pos-rel {
+    position: relative;
+}
+
+.nav a {
+    color: #545454FF!important;
+}
+
 ul.jm-footer-list li, a {
-    color: #1F1F1FFF!important;
+    color: white!important;
 }
 
 @media (max-width: 767px) {
