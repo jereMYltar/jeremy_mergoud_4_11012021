@@ -74,3 +74,7 @@ ul.jm-footer-list li, a {
         column-count: 1;
     }
 }
+
+* :focus {
+    border: dotted 3px red
+}
