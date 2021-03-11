@@ -644,7 +644,8 @@ a {
 }
 
 .container {
-    max-width: 1000px;
+    /* max-width: 1000px; 10/03/2021-JM- Transformation en 100% pour devenir responsive */
+    width: 100%;
 }
 
 .hero-bloc-text {
@@ -665,19 +666,19 @@ a {
     margin: auto auto auto auto;
 }
 
-p {
+/* p { 10/03/2021-JM- Taille de caractères trop petite, on garde la taille de base, à savoir 14px
     font-size: 11px;
-}
+} */
 
 .tight-width-whitespace {
     max-width: 600px;
     margin: auto auto auto auto;
 }
 
-.h1 {
+/* .h1 { 10/03/2021-JM- Inutile, report dans le sélecteur d'élément
     font-size: 20px;
     font-family: "Open Sans";
-}
+} */
 
 .cta-hero {
     margin-top: 22px;
@@ -693,6 +694,10 @@ p {
     margin: auto auto auto auto;
 }
 
+h1 {
+    color: #333333!important;
+}
+
 h2 {
     font-size: 22px;
     line-height: 1.4em;
@@ -705,18 +710,14 @@ h3 {
     color: #333333!important;
 }
 
+h4 {
+    color: #333333!important;
+}
+
 .med-width-whitespace {
     max-width: 800px;
     margin: auto auto auto auto;
     box-shadow: 0px 0px 0px #000000;
-}
-
-h1 {
-    color: #333333!important;
-}
-
-h4 {
-    color: #333333!important;
 }
 
 .icons {
@@ -729,7 +730,8 @@ h4 {
 }
 
 .portfolio-thumb {
-    margin-bottom: 24px;
+    /* margin-bottom: 24px; Ajout de marges latérales auto pour centrer les images*/
+    margin: 0 auto 24px;
 }
 
 .portfolio-row {
@@ -808,6 +810,7 @@ h4 {
 
 .bg-banniere {
     background-image: url("img/la-chouette-agence-banniere.webp");
+    background-size: cover!important; /* 10/03/2021-JM- Mise en responsive de la bannière */
 }
 
 .bg-presentation {
@@ -850,9 +853,9 @@ h4 {
 }
 
 @media (max-width: 991px) {
-    .container {
+/*     .container { 10/03/2021-JM- Règle inutile puisque dictée dans le cas général
         width: 100%;
-    }
+    } */
     .b-parallax {
         background-attachment: scroll;
     }
@@ -1002,4 +1005,11 @@ h4 {
     .bloc-mob-center-text {
         text-align: center;
     }
+}
+
+/* JM - Classes ajoutées */
+.jm-citation {
+    width: 80%;
+    font-style: italic;
+    margin: auto;
 }
