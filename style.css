@@ -451,9 +451,10 @@ nav .caret {
     background: rgba(0, 0, 0, .3);
 }
 
+/* doublon
 button {
     outline: none!important;
-}
+} */
 
 .btn-rd {
     border-radius: 40px;
@@ -502,12 +503,12 @@ button {
 }
 
 .scrollToTop {
-    width: 40px;
-    height: 40px;
+    width: 44px; /* 11/03/2021-JM- Mise de width et height à 44px */
+    height: 44px;
     position: fixed;
     bottom: 20px;
     right: 20px;
-    opacity: 0;
+    /* 11/03/2021-JM- suppression de opacity: 0; */
     z-index: 500;
     transition: all .3s ease-in-out;
 }
@@ -1012,4 +1013,40 @@ h4 {
     width: 80%;
     font-style: italic;
     margin: auto;
+}
+.jm-black {
+    color: #000000!important;
+}
+.jm-black-background-acc {
+    background-color: #000000C5;
+    padding: 40px 40px 40px 40px;
+}
+/* a:hover, a:focus, button:hover, button:focus {
+    outline: 2px dotted red;
+} */
+
+[aria-label] {
+    position: relative;
+    }
+.scrollToTop[aria-label] {
+    position: fixed;
+}
+[aria-label]:after {
+    content: attr(aria-label);
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform:translateX(-105%) translateY(-50%);
+    pointer-events: none;
+    padding: 8px 10px;
+    overflow: visible;
+    color: #fff;
+    background-color: #412917;
+    border-right: 6px solid #ffffff;
+    border-radius: 3px;
+}
+    
+[aria-label]:hover:after, [aria-label]:focus:after {
+    display: block;
 }
