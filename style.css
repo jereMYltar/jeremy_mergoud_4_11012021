@@ -7,7 +7,7 @@ body {
 
 a,
 button {
-    transition: all .3s ease-in-out;
+    transition: all 0.3s ease-in-out;
     outline: none!important;
 }
 
@@ -468,7 +468,7 @@ button {
 }
 
 .icon-md {
-    font-size: 30px!important;
+    font-size: 44px!important; /* Modification de 30px en 40px pour respecter la règle WCAG 2.5.5 */
 }
 
 .icon-lg {
@@ -644,6 +644,19 @@ a {
     color: #575757!important;
 }
 
+/* Ajout d'une max-width à tout ce qui contient du texte pour le contenir sous 80 caractères de largeur */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote {
+    max-width: 750px;
+    margin: auto;
+}
+
 .container {
     /* max-width: 1000px; 10/03/2021-JM- Transformation en 100% pour devenir responsive */
     width: 100%;
@@ -667,19 +680,10 @@ a {
     margin: auto auto auto auto;
 }
 
-/* p { 10/03/2021-JM- Taille de caractères trop petite, on garde la taille de base, à savoir 14px
-    font-size: 11px;
-} */
-
 .tight-width-whitespace {
     max-width: 600px;
     margin: auto auto auto auto;
 }
-
-/* .h1 { 10/03/2021-JM- Inutile, report dans le sélecteur d'élément
-    font-size: 20px;
-    font-family: "Open Sans";
-} */
 
 .cta-hero {
     margin-top: 22px;
@@ -1014,6 +1018,8 @@ h4 {
     font-style: italic;
     margin: auto;
 }
+
+/* JM - Classes spécifiques pour les pages en version contrastée */
 .jm-black {
     color: #000000!important;
 }
@@ -1021,10 +1027,11 @@ h4 {
     background-color: #000000C5;
     padding: 40px 40px 40px 40px;
 }
-/* a:hover, a:focus, button:hover, button:focus {
-    outline: 2px dotted red;
-} */
+.jm-icon-bbg {
+    background-color: #000000C5;
+}
 
+/* JM - Mise en place d'info-bulles sur les éléments contenant un attribut aria-label */
 [aria-label] {
     position: relative;
     }
@@ -1037,16 +1044,48 @@ h4 {
     position: absolute;
     top: 0;
     left: 0;
-    transform:translateX(-105%) translateY(-50%);
+    transform:translate(-105%,-50%);
     pointer-events: none;
     padding: 8px 10px;
     overflow: visible;
     color: #fff;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+    font-weight: normal;
     background-color: #412917;
     border-right: 6px solid #ffffff;
     border-radius: 3px;
 }
-    
+.tt-bm[aria-label]:after {
+    top: 100%;
+    left: 50%;
+    transform:translate(-50%,5%);
+    border-right: none;
+    border-top: 6px solid #ffffff;
+}
+/* .tt-bl[aria-label]:after {
+    top: 100%;
+    left: 100%;
+    transform:translate(-105%,5%);
+    border-right: none;
+    border-top: 6px solid #ffffff;
+} */
 [aria-label]:hover:after, [aria-label]:focus:after {
     display: block;
+}
+
+/* JM - Mise en place d'une mise en évidence du focus et du hover */
+a:hover, a:focus, button:hover, button:focus {
+    /* outline: 2px dotted red; */
+    outline-style: dotted!important;
+    outline-width: 2px!important;
+    outline-color: red!important;
+    outline-offset: 1px!important;
+}
+
+
+.jm-icon-mp {
+    margin: 0 20px 0;
+    padding: 0
 }
