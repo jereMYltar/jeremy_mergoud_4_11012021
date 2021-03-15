@@ -658,8 +658,9 @@ blockquote {
 }
 
 .container {
-    /* max-width: 1000px; 10/03/2021-JM- Transformation en 100% pour devenir responsive */
+    /* width: 1000px; 15/03/2021-JM- Transformation en width:100%; et max-width:1000px;  pour devenir responsive */
     width: 100%;
+    max-width: 1000px;
 }
 
 .hero-bloc-text {
